@@ -1,0 +1,83 @@
+@import 'mixins';
+
+.top__page {
+  padding: 16px 8px 0;
+}
+
+.attention,
+.new {
+  @include pc {
+    width: 90%;
+  }
+}
+
+.attention {
+  @include pc {
+    margin: 0 auto 64px;
+  }
+  h1 {
+    text-align: center;
+  }
+  a {
+    font-size: 13px;
+    color: #0860c0;
+    text-align: right;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.new {
+  @include pc {
+    border: 2px solid #eee;
+    border-radius: 0px;
+    margin: 0 auto 0px;
+  }
+}
+
+.hdg {
+  font-size: 18px;
+  text-align: center;
+  @include pc {
+    font-size: 24px;
+  }
+}
+
+.hdg-pc {
+  @include pc {
+    padding-top: px;
+  }
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+//file upload
+
+ul,
+li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+
+#file-label {
+      display: inline-flex;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 18px;
+}
+
+#file-label mat-icon {
+      font-size: 18px;
+      text-align: center;
+}
+
+#file-label a {
+      cursor: pointer;
+}

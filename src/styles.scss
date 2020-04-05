@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'mixins';
+@import 'reset';
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$candy-app-primary: mat-palette($mat-blue, 900);
+
+$candy-app-accent: mat-palette($mat-orange, A100);
+
+$candy-app-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme(
+  $candy-app-primary,
+  $candy-app-accent,
+  $candy-app-warn
+);
+@include angular-material-theme($my-theme);
+
+html,
+body {
+  min-height: 100%;
+  padding-bottom: 53px;
+  @include tab {
+    padding: 0;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+@import "mixins";
+@import "~@angular/material/theming";
+
+.profile {
+  h2 {
+    text-align: center;
+  }
+  margin: 0 8px 40px;
+  max-width: 1000px;
+  line-height: 1.5;
+  @include mobile {
+    margin: 0 auto 40px;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    padding: 16px 16px 56px;
+    @include mat-elevation(4);
+  }
+  &__field {
+    width: 100%;
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    @include pc {
+      padding: 8px 24px;
+    }
+  }
+}
+
+
+.submit__profile {
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+.footer {
+  background-color: rgb(13,71,161);
+  padding: 16px 8px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include tab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__first-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include pc {
+      justify-content: space-between;
+    }
+    li {
+      list-style: none;
+      font-size: 12px;
+      @include tab {
+        line-height: 2.5;
+      }
+      @include pc {
+        font-size: 14px;
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0px;
+      &:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.footer-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgb(27, 94, 32);
+  @include tab {
+    display: none;
+  }
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 8px;
+      text-align: center;
+    }
+  }
+}
+
+
+.ais-SearchBox-input {
+  outline: none;
+}
+
+.ais-Hits {
+  text-align: center;
+}
+
+svg {
+  width: 13px;
+  height: 13px;
+}

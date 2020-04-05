@@ -1,0 +1,35 @@
+<header  *ngIf='!((customer$ | async) && isSub && isShow)'>
+
+  <mat-toolbar class="header" color="primary">
+    <p>
+      <a routerLink="/" routerLinkActive="active">{{title}}</a>
+    </p>
+    <nav class="header__nav">
+      <div class="header__nav-item">
+     <button
+          mat-raised-button
+          color="warn"
+        > <a href="https://www.patreon.com/chhristov">
+        support us</a>
+        </button>
+
+        <div *ngIf='!isShow' class="header__user-icon">
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <img *ngIf="user$ | async as user" [src]="user.photoURL" alt="" />
+          </button> 
+        </div>
+        <mat-menu #menu="matMenu">
+
+          <button mat-menu-item *ngIf="user$ | async" (click)="logout()">
+            <mat-icon>lock</mat-icon>
+            <span>Logout</span>
+          </button>
+            <button routerLink="/plan" mat-menu-item>
+              <mat-icon>payment</mat-icon>
+              <span>Upgrade</span>
+            </button>
+        </mat-menu>
+      </div>
+    </nav>
+  </mat-toolbar>
+</header>

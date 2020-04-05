@@ -1,0 +1,107 @@
+@import 'mixins';
+
+.job-card {
+  padding: 0 8px;
+  margin-bottom: 24px;
+  @include tab {
+    width: 70%;
+    margin: 0 auto 32px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__title {
+    line-height: 1.5;
+    span {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    a {
+      color: #0860c0;
+    }
+  }
+  &__content-list {
+    line-height: 1.5;
+    @include pc {
+      width: 70%;
+    }
+    li {
+      border-bottom: 1px dotted #ededed;
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+      padding: 8px 0;
+      font-size: 14px;
+      &:last-child {
+        margin-bottom: 32px;
+      }
+      @include pc {
+        margin-left: 16px;
+      }
+    }
+    i {
+      padding-right: 24px;
+      color: lightgray;
+    }
+  }
+  img {
+    width: 100%;
+    margin-bottom: 16px;
+    @include pc {
+      width: 30%;
+      height: auto;
+    }
+  }
+  &__box {
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin-bottom: 48px;
+  }
+  &__btn {
+    text-align: right;
+    span {
+      padding-right: 3px;
+    }
+    button {
+      @include pc {
+        padding: 8px 24px;
+      }
+    }
+  }
+  &__btn__right {
+    margin-left: 5px;
+    @include pc {
+      margin-left: 8px;
+    }
+  }
+  &__content {
+    @include pc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+  &__number {
+    color: orangered;
+  }
+  &__default-text {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 14px;
+    @include pc {
+      font-size: 16px;
+    }
+  }
+}

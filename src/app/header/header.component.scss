@@ -1,0 +1,67 @@
+@import 'mixins';
+@import '~@angular/material/theming';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 8px;
+  @include mat-elevation(4);
+  @include pc {
+    padding: 0 32px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+  }
+  p {
+    font-size: 24px;
+    @include pc {
+      font-size: 32px;
+    }
+  }
+  &__nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include pc {
+      display: none;
+    }
+  }
+  &__nav-pc {
+    @include pc {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button {
+      color: #fff;
+    }
+  }
+  &__nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      padding-left: 8px;
+      @include tab {
+        padding-left: 32px;
+      }
+      span {
+        display: inline-flex;
+        vertical-align: middle;
+        color: #fff;
+      }
+    }
+    img {
+      width: 40px;
+      border-radius: 50%;
+      @include pc {
+        width: 50px;
+      }
+    }
+  }
+}

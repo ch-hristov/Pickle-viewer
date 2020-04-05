@@ -1,0 +1,34 @@
+<article  class="top__page">
+ 
+  <section style="display:flex; align-items: center; justify-content: center; flex-direction: column;">
+
+    <form [formGroup]="form" class="profile">
+      <div>
+       
+        <h3>Open and view .pickle files directly in your browser</h3>
+        <button  style="margin:10px;"
+        *ngIf='staticUrlArray != undefined' mat-raised-button color="primary" (click)='download()'>Download JSON file</button>
+        <input style="margin:30px;" type="file" (change)="setAvatar($event)" />
+
+        <ngx-json-viewer style="max-width: 600px;" *ngIf='staticUrlArray != undefined' [json]="staticUrlArray"></ngx-json-viewer>
+        
+        <div style="margin: 15px;">
+        <p>100% private, nothing is transferred. You can convert the file to JSON after opening it.</p>
+        <p>If a file doesn't open, pickle it with Python version less than 3.4</p>
+      </div>
+      </div>
+    </form>
+  </section>
+</article>
+<footer>
+  <div class="footer">
+
+    <ul class="footer__first-nav">
+      <!-- <li><a routerLink="/terms">Terms of service</a></li> -->
+      <!-- <li><a routerLink="/about">About</a></li> -->
+      <p class="footer__copyright">All operations are done in your browser, so your data is 100% safe</p>
+      <p class="footer__copyright">Made with <3 in Bulgaria and The Netherlands</p>
+    </ul>
+    <p class="footer__copyright">Copyright © Pickle-viewer; All rights reserved.</p>
+  </div>
+</footer>

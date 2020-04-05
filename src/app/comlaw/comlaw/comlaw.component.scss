@@ -1,0 +1,54 @@
+@import 'mixins';
+
+.comlaw {
+  margin: 0 8px 16px;
+  &__list {
+    @include pc {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    @include pc {
+      font-size: 24px;
+    }
+  }
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-top: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  @include tab {
+    width: 80%;
+    margin: 0 auto 16px;
+  }
+  @include pc {
+    width: 40%;
+    margin: 0;
+  }
+}
+dt {
+  background: #f2f2f2;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+dd {
+  padding: 10px;
+  margin: 0;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  width: 70%;
+  background: #fff;
+  box-sizing: border-box;
+}

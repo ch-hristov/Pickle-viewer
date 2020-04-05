@@ -1,0 +1,29 @@
+$mobile: 600px;
+$tab: 768px;
+$pc: 1024px;
+$pclarg: 1440px;
+
+@mixin mobile {
+  @media (min-width: ($mobile)) {
+    @content;
+  }
+}
+
+
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin pclarg {
+  @media (min-width: ($pclarg)) {
+    @content;
+  }
+}
