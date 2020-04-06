@@ -1,5 +1,7 @@
 # Pickle viewer 
 
+## Currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
