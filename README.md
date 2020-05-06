@@ -1,10 +1,6 @@
 # Pickle viewer 
 
-## Currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
-
-
-
-
+This project is currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
 
 
 
