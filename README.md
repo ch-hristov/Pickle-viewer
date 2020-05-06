@@ -1,4 +1,15 @@
-# Embed show
+# Pickle viewer 
+
+## Currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
+
+
+
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
@@ -27,3 +38,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
+Please note this package uses jpickle, I couldn't make it work without downloading the code from the official repository (there was something wrong with the npm package).
