@@ -32,7 +32,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/scripts/pickle.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

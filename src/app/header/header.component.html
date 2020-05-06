@@ -7,11 +7,20 @@
     <nav class="header__nav">
       <div class="header__nav-item">
      <button
+     style="margin:5px;"
           mat-raised-button
           color="warn"
         > <a href="https://www.patreon.com/chhristov">
         support us</a>
         </button>
+
+        <button 
+        style="margin:5px;"
+        mat-raised-button
+        color="warn"
+      > <a href="https://github.com/ch-hristov/Pickle-viewer">
+      Github</a>
+      </button>
 
         <div *ngIf='!isShow' class="header__user-icon">
           <button mat-icon-button [matMenuTriggerFor]="menu">

@@ -14,7 +14,9 @@
         
         <div style="margin: 15px;">
         <p>100% private, nothing is transferred. You can convert the file to JSON after opening it.</p>
-        <p>If a file doesn't open, pickle it with Python version less than 3.4</p>
+        <p style="color:red">This software only opens files created with Python 3.3 or less</p>
+        <p>Contribute to development by supporting us on Patreon<p>
+        <p style="color:red" *ngIf='err'>Sorry, we couldn't open your file. :( The following error occurred {{err}}</p>
       </div>
       </div>
     </form>
