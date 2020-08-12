@@ -3,7 +3,7 @@
 This project is currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
 
 
-Note: You need Firebase API key to run this. Create a firebase project and download the required fields specified in `environment.prod.ts`
+### Note: You need Firebase API key to run this. Create a firebase project and download the required fields specified in `src/environment/environment.prod.ts`
 
 
 
