@@ -1,11 +1,16 @@
 # Pickle viewer 
 
+### <ins>Imporant Warning: This software has multiple detected security issues. I do not recommend you use it in production.</ins>
+
+
+
 This project is currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
+
+
 
 
 ### Note: You need Firebase API key to run this. Create a firebase project and download the required fields specified in `src/environment/environment.prod.ts`
 
-### Warning: This software has multiple detected security issues. I do not recommend you use it in production.
 
 
 
