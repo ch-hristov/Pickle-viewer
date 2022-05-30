@@ -5,6 +5,8 @@ This project is currently supporting all .pickle files produced by Python < 3.4.
 
 ### Note: You need Firebase API key to run this. Create a firebase project and download the required fields specified in `src/environment/environment.prod.ts`
 
+### Warning: This software has multiple detected security issues. I do not recommend you use it in production.
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
