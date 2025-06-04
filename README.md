@@ -1,7 +1,9 @@
 # Pickle viewer 
 
 ### <ins>Imporant Warning: This software has multiple detected security issues. I do not recommend you use it in production.</ins>
+Additionally, this project was adapted from a template and may contain a lot of unneccessary code. Most of the *IMPORTANT* code can be found here
 
+https://github.com/ch-hristov/Pickle-viewer/blob/master/src/app/top/top/top.component.ts
 
 
 This project is currently supporting all .pickle files produced by Python < 3.4. Contribute to the repository (feature request is  here https://github.com/ch-hristov/Pickle-viewer/issues/2)
