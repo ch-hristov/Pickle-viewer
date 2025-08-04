@@ -31,7 +31,7 @@
     "algoliasearch": "^3.35.1",
     "angular-instantsearch": "^4.3.2",
     "buffer": "^5.5.0",
-    "firebase": "^7.6.0",
+    "firebase": "^7.24.0",
     "hammerjs": "^2.0.8",
     "instantsearch.css": "^7.4.2",
     "instantsearch.js": "^4.2.0",
